@@ -1,13 +1,8 @@
 
 # Pump-Fun Sniper Bot
 
-This repository contains the codebase for the Pump-Fun Sniper Bot developed by [@licketyspliket](https://www.twitter.com/licketyspliket) and me. Although this project is archived and not intended for further iteration, this README provides a comprehensive overview to help anyone who may want to understand or run the bot.
+This repository contains a simple Pump and Dump sniper bot, which is not for sale. It is intended for educational purposes and experimentation only.
 
-## Overview
-
-The Pump-Fun Sniper Bot is designed to interact with the Solana blockchain, purchasing newly minted coins and managing them, based on our replication of orcACR...'s strategy. I detail the strategy more in my first blog post on this project, which can be found [here](https://www.mikem.codes/if-you-aint-first-youre-last-2/).
-
-![Bot Startup](images/bot-running.jpg)
 ## Configuration
 
 ### Environment Variables
@@ -71,19 +66,3 @@ if err := bot.beginJito(); err != nil {
     ```sh
     go run .
     ```
-
-## Additional Information
-
-- **Solana RPC and WebSocket**: Ensure you are using high-performance RPC and WebSocket URLs for optimal performance.
-- **MySQL Database**: Make sure your MySQL database is properly set up and accessible with the provided credentials.
-- **Jito Integration**: Optional integration for improved transaction handling.
-
-## Acknowledgements
-
-A special thank you to [Gagliardetto](https://www.github.com/Gagliardetto) for creating the open-source Solana Go packages that were instrumental in developing this bot. The code we used and built on from him can be found in the `pkg/jito-go` directory, as well as the output from his `anchor-go` package based on the Pump.fun IDL, which is found in the `pump` directory.
-
-Also, a huge thank you to [weeaa](https://www.github.com/weeaa) for their work on [Jito Go SDK](https://www.github.com/weeaa/jito-go), which we used to handle all interactions with Jito.
-
-## Learn More
-
-Read more about the development of this project on my [blog](https://www.mikem.codes/if-you-aint-first-youre-last-reverse-engineering-a-leading-pump-fun-sniper-bot-part-2/).
